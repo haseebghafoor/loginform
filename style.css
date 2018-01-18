@@ -1,6 +1,8 @@
 body
 {
-background-image: url(C:\wamp64\www\tester\images);
+background-image: url("../loginform/images/loginbg.jpg");
     margin: 0 auto;
 	background-repeat: no-repeat;
+	background-size: 100% 850px;
+
 }
