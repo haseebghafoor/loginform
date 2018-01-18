@@ -13,13 +13,24 @@
            <input type="text" name="surname" placeholder="Enter SurName">      
             </div>
               
-            <div>
-                <h2>Date Of Birth</h2>
+              <div class="date">
+                Date Of Birth:
                 <input type="date" name="date" placeholder="Date of birth"> 
             </div>
-            <div>
+              <div class="radiobt">
+                <input type="radio" name="male">Male
+                <input type="radio" name="female">FeMale
+            </div>
+              <div>
                 <input type="email" name="email" placeholder="Enter correct Email"> 
             </div>
+              <div>
+                <input type="text" name="phoneno" placeholder="Enter Mobile Number"> 
+            </div>
+              <div>
+                <input type="text" name="password" placeholder="Enter New Password">
+            </div>
+
     	</form>
        </div>
 
