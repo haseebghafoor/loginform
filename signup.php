@@ -88,6 +88,21 @@ var phonenumber_error=document.getElementById("error_phonenumber");
             surname.focus();
             return false;
         }
+        //date of birth error
+        if(date.value=="")
+        {
+            date.style.border="3px solid red";
+            date_error.textContent="Please enter the date of birth";
+            date.focus();
+            return false;
+        }
+        if(email.value=="")
+        {
+            email.style.border="3px solid red";
+            email_error.textContent="Please enter the email";
+            email.focus();
+            return false;
+        }
     }
 </script>
 </body>
