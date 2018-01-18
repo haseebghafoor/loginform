@@ -20,7 +20,7 @@
                 <input type="submit" name="submit" value="SIGNIN" class="btnsignin">
             </div>
             <div>
-               <a href="#"> <input type="button" name="signup" value="SIGNUP" class="btnsignup"></a>
+               <a href="signup.php"> <input type="button" name="signup" value="SIGNUP" class="btnsignup"></a>
             </div>
     	</form>
        </div>
