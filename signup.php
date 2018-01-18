@@ -69,6 +69,26 @@ var phonenumber_error=document.getElementById("error_phonenumber");
     email.addEventListener("blur",emailVerify,true);
     phoneno.addEventListener("blur",phonenoVerify,true);
     password.addEventListener("blur",passwordVerify,true);
+    // write validation function
+    function validation()
+    {
+        //firstname error
+        if(firstname.value=="")
+        {
+            firstname.style.border="3px solid red";
+            firstname_error.textContent="Please enter the firstname";
+            firstname.focus();
+            return false;
+        }
+        //surname error
+        if(surname.value=="")
+        {
+            surname.style.border="3px solid red";
+           surname_error.textContent="Please enter the surname";
+            surname.focus();
+            return false;
+        }
+    }
 </script>
 </body>
 </html>
