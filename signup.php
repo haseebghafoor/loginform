@@ -30,6 +30,9 @@
               <div>
                 <input type="text" name="password" placeholder="Enter New Password">
             </div>
+            <div>
+                <input type="submit" name="submit" value="Send" class="btnsignin">
+            </div>
 
     	</form>
        </div>

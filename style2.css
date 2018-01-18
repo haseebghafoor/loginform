@@ -56,3 +56,11 @@ height: 45px;
 	padding-left: 130px;
 	border: none;
 }
+.btnsignin{
+	height: 35px;
+	width: 100px;
+	color: #fff;
+	background-color: #00e600;
+	border: none;
+	border-radius: 3px;
+}
