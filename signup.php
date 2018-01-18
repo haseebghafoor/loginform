@@ -103,6 +103,22 @@ var phonenumber_error=document.getElementById("error_phonenumber");
             email.focus();
             return false;
         }
+        //pjone no error
+        if(phoneno.value=="")
+        {
+            phoneno.style.border="3px solid red";
+            phoneno_error.textContent="Please enter the phone Number";
+            phoneno.focus();
+            return false;
+        }
+        //password error
+        if(password.value=="")
+        {
+            password.style.border="3px solid red";
+           password_error.textContent="Please enter the date of birth";
+            password.focus();
+            return false;
+        }
     }
 </script>
 </body>
