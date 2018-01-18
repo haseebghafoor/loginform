@@ -7,28 +7,37 @@
 <body>
     <div class="container">
         <p>Sign Up</p>
-    	<form action="$_SERVER['PHP_SELF']" method="post">
+    	<form action="$_SERVER['PHP_SELF']" method="post" onsubmit="return validation()" name="signupform">
     		<div>
-           <input type="text" name="firstname" placeholder="Enter FirstName"> 
-           <input type="text" name="surname" placeholder="Enter SurName">      
+           <input type="text" name="firstname" placeholder="Enter FirstName">
+           <div id="error_firstname"></div> 
+       </div>
+       <div>
+           <input type="text" name="surname" placeholder="Enter SurName">  
+            <div id="error_surname"></div>    
             </div>
               
               <div class="date">
                 Date Of Birth:
                 <input type="date" name="date" placeholder="Date of birth"> 
+                <div id="error_dateofbirth"></div>  
             </div>
               <div class="radiobt">
-                <input type="radio" name="male">Male
-                <input type="radio" name="female">FeMale
+                <input type="radio" name="gender" value="Male" checked="checked">Male
+                <input type="radio" name="gender" value="female">FeMale
+                 
             </div>
               <div>
                 <input type="email" name="email" placeholder="Enter correct Email"> 
+                <div id="error_email"></div>  
             </div>
               <div>
                 <input type="text" name="phoneno" placeholder="Enter Mobile Number"> 
+                <div id="error_phonenumber"></div>  
             </div>
               <div>
                 <input type="text" name="password" placeholder="Enter New Password">
+                <div id="error_password"></div>  
             </div>
             <div>
                 <input type="submit" name="submit" value="Send" class="btnsignin">
@@ -37,8 +46,29 @@
     	</form>
        </div>
 
-
-       
-
+<!--adding java script-->
+<script type="text/javascript">
+    //Geting all input text of object
+    var firstname=document.forms["signupform"]["firstname"];
+     var surname=document.forms["signupform"]["surname"];
+      var date=document.forms["signupform"]["date"];
+      var email=document.forms["signupform"]["email"];
+       var phoneno=document.forms["signupform"]["phoneno"];
+       var password=document.forms["signupform"]["'password'"];
+    //getting all error display
+    var firstname_error=document.getElementById("error_firstname");
+     var surname_error=document.getElementById("error_surname");
+      var dateofbirth_error=document.getElementById("error_dateofbirth");
+    var email_error=document.getElementById("error_email");
+var phonenumber_error=document.getElementById("error_phonenumber");
+    var password_error=document.getElementById("error_password");
+    //setting all event listner
+    firstname.addEventListener("blur",firstnameVerify,true);
+    surname.addEventListener("blur",surnameVerify,true);
+    date.addEventListener("blur",dateVerify,true);
+    email.addEventListener("blur",emailVerify,true);
+    phoneno.addEventListener("blur",phonenoVerify,true);
+    password.addEventListener("blur",passwordVerify,true);
+</script>
 </body>
 </html>
