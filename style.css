@@ -32,6 +32,7 @@ input[type="password"]
 	background-color: #fff;
 	border-radius: 7px;
 	padding-left: 30px;
+	border: none;
 }
 .forminput::before{
 	content:"\f007";
@@ -45,4 +46,21 @@ input[type="password"]
 .forminput:nth-child(2)::before{
 	content:"\f023";
 	
+}
+.btnsignin{
+	height: 35px;
+	width: 100px;
+	color: #fff;
+	background-color: #00e600;
+	border: none;
+	border-radius: 3px;
+}
+.btnsignup{
+	margin: 25px auto;
+	height: 35px;
+	width: 100px;
+	color: #fff;
+	background-color: #00e600;
+	border: none;
+	border-radius: 3px;
 }
