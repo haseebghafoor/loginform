@@ -7,7 +7,7 @@
 <body>
     <div class="container">
         <p>Sign Up</p>
-    	<form action="$_SERVER['PHP_SELF']" method="post" onsubmit="return validation()" name="signupform">
+    	<form action="signupdb.php" method="post" onsubmit="return validation()" name="signupform">
     		<div>
            <input type="text" name="firstname" placeholder="Enter FirstName">
            <div id="error_firstname"></div> 
@@ -54,7 +54,7 @@
       var date=document.forms["signupform"]["date"];
       var email=document.forms["signupform"]["email"];
        var phoneno=document.forms["signupform"]["phoneno"];
-       var password=document.forms["signupform"]["'password'"];
+       var password=document.forms["signupform"]["password"];
     //getting all error display
     var firstname_error=document.getElementById("error_firstname");
      var surname_error=document.getElementById("error_surname");
@@ -92,7 +92,8 @@ var phonenumber_error=document.getElementById("error_phonenumber");
         if(date.value=="")
         {
             date.style.border="3px solid red";
-            date_error.textContent="Please enter the date of birth";
+            dateofbirth_error.textContent="Please enter the date of birth";
+             dateofbirth_error.textContent.color="red";
             date.focus();
             return false;
         }
@@ -107,7 +108,7 @@ var phonenumber_error=document.getElementById("error_phonenumber");
         if(phoneno.value=="")
         {
             phoneno.style.border="3px solid red";
-            phoneno_error.textContent="Please enter the phone Number";
+            phonenumber_error.textContent="Please enter the phone Number";
             phoneno.focus();
             return false;
         }
@@ -115,9 +116,18 @@ var phonenumber_error=document.getElementById("error_phonenumber");
         if(password.value=="")
         {
             password.style.border="3px solid red";
-           password_error.textContent="Please enter the date of birth";
+           password_error.textContent="Please enter the password";
             password.focus();
             return false;
+        }
+        if(date.value>=01/01/2018)
+        {
+            date.style.border="3px solid red";
+            dateofbirth_error.textContent="Please enter the correct date of birth";
+             dateofbirth_error.textContent.color="red";
+            date.focus();
+            return false;
+
         }
     }
 </script>
