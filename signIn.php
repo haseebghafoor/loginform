@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <img src="images/men1.png">
-    	<form action="$_SERVER['PHP_SELF']" method="post">
+    	<form action="signindb.php" method="post">
     		<div class="forminput">
     			<input type="text" name="username" placeholder="Enter UserName">
     		</div>
@@ -24,7 +24,7 @@
             </div>
     	</form>
        </div>
-
+<!--adding java script->
 
        
 
