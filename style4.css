@@ -1,0 +1,32 @@
+input[type="button"]
+{
+	height: 35px;
+	width: 100px;
+	color: #fff;
+	background-color: #00e600;
+	border: none;
+	border-radius: 3px;
+	margin: 0px 20px;
+	padding-top: 5px;
+}
+.addnew
+{
+	padding-top: 10px;
+}
+#table1
+{
+	color:#0000b3;
+	margin-top:100px;
+	text-align: center;
+	padding-left: 550px;
+}
+#table2
+{
+	color: #fff;
+	background-color: #85a3e0;
+}
+a
+{
+	text-decoration-line: none;
+	
+}
